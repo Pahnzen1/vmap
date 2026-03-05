@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -22 120 95" width="120" height="95">
+  <defs>
+    <linearGradient id="wall" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b03020"/>
+      <stop offset="40%" stop-color="#c83828"/>
+      <stop offset="100%" stop-color="#a02818"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b0b0a8"/>
+      <stop offset="100%" stop-color="#888880"/>
+    </linearGradient>
+    <linearGradient id="gnd" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#909080"/>
+      <stop offset="100%" stop-color="#707068"/>
+    </linearGradient>
+    <filter id="sh">
+      <feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="rgba(0,0,0,0.25)"/>
+    </filter>
+  </defs>
+
+  <!-- ══ FLOATING LABEL ══ -->
+  <rect x="5" y="-20" width="110" height="13" rx="6.5"
+        fill="white" stroke="#cccccc" stroke-width="0.9"/>
+  <text x="60" y="-10.5" text-anchor="middle"
+        font-family="'Nunito','Arial',sans-serif"
+        font-size="5.8" font-weight="800" letter-spacing="0.05"
+        fill="#000000">Rudkøbings Fisk &amp; Røgeri</text>
+
+  <g filter="url(#sh)">
+
+    <!-- GROUND SHADOW -->
+    <ellipse cx="60" cy="72" rx="52" ry="4" fill="url(#gnd)" opacity="0.6"/>
+
+    <!-- ══ CORRUGATED ROOF ══ -->
+    <!-- Main roof surface -->
+    <rect x="5" y="14" width="110" height="12" fill="url(#roof)" stroke="#707068" stroke-width="0.4"/>
+    <!-- Corrugation lines -->
+    <g stroke="#a0a098" stroke-width="0.4" opacity="0.7">
+      <line x1="5" y1="15.5" x2="115" y2="15.5"/>
+      <line x1="5" y1="17" x2="115" y2="17"/>
+      <line x1="5" y1="18.5" x2="115" y2="18.5"/>
+      <line x1="5" y1="20" x2="115" y2="20"/>
+      <line x1="5" y1="21.5" x2="115" y2="21.5"/>
+      <line x1="5" y1="23" x2="115" y2="23"/>
+      <line x1="5" y1="24.5" x2="115" y2="24.5"/>
+    </g>
+    <!-- Roof overhang shadow -->
+    <rect x="5" y="25" width="110" height="2" fill="#585850" opacity="0.3"/>
+
+    <!-- TWO CHIMNEYS -->
+    <rect x="38" y="6" width="5" height="10" fill="#888880" stroke="#606058" stroke-width="0.4"/>
+    <rect x="36.5" y="5" width="8" height="2" fill="#707068" stroke="#505048" stroke-width="0.3"/>
+    <rect x="48" y="7" width="4" height="9" fill="#888880" stroke="#606058" stroke-width="0.4"/>
+    <rect x="46.5" y="6" width="7" height="2" fill="#707068" stroke="#505048" stroke-width="0.3"/>
+
+    <!-- ══ MAIN RED BUILDING WALL ══ -->
+    <rect x="5" y="26" width="110" height="44" fill="url(#wall)" stroke="#801808" stroke-width="0.5"/>
+
+    <!-- White fascia band at top of wall -->
+    <rect x="5" y="26" width="110" height="7" fill="#e8e0d0" stroke="#c0b8a8" stroke-width="0.4"/>
+
+    <!-- ══ SIGN ON BUILDING ══ -->
+    <!-- Sign white box -->
+    <rect x="52" y="27.5" width="56" height="14" rx="0.5" fill="white" stroke="#c0b8a8" stroke-width="0.5"/>
+    <!-- Fish logo (simple cod/mackerel shape) -->
+    <ellipse cx="61" cy="34.5" rx="5" ry="2.2" fill="#2255aa" opacity="0.85"/>
+    <polygon points="66,34.5 69,32.5 69,36.5" fill="#2255aa" opacity="0.85"/>
+    <circle cx="58.5" cy="33.8" r="0.6" fill="white"/>
+    <!-- Sign text line 1 -->
+    <text x="80" y="32.5" text-anchor="middle"
+          font-family="Arial,sans-serif" font-size="3.2" font-weight="bold"
+          fill="#2255aa" letter-spacing="0.1">RUDKØBINGS FISK &amp; RØGERI</text>
+    <!-- Sign text line 2 (phone) -->
+    <text x="80" y="38.5" text-anchor="middle"
+          font-family="Arial,sans-serif" font-size="3.5" font-weight="bold"
+          fill="#1a1a1a">TELF. 61 61 65 66</text>
+
+    <!-- ══ LEFT DARK SECTION (black cladding) ══ -->
+    <rect x="5" y="33" width="28" height="37" fill="#2a2a28" stroke="#1a1a18" stroke-width="0.4"/>
+    <!-- Vertical cladding lines -->
+    <g stroke="#1e1e1c" stroke-width="0.5" opacity="0.6">
+      <line x1="9" y1="33" x2="9" y2="70"/>
+      <line x1="13" y1="33" x2="13" y2="70"/>
+      <line x1="17" y1="33" x2="17" y2="70"/>
+      <line x1="21" y1="33" x2="21" y2="70"/>
+      <line x1="25" y1="33" x2="25" y2="70"/>
+      <line x1="29" y1="33" x2="29" y2="70"/>
+    </g>
+
+    <!-- ══ DOOR (white, centre-left of red section) ══ -->
+    <rect x="33" y="40" width="14" height="30" fill="#d8d0c0" stroke="#a09888" stroke-width="0.5"/>
+    <!-- Door frame -->
+    <rect x="33" y="40" width="14" height="30" fill="none" stroke="#b0a890" stroke-width="1.2"/>
+    <!-- Door panels -->
+    <rect x="34.5" y="41.5" width="4.5" height="8" fill="none" stroke="#a09880" stroke-width="0.4" rx="0.2"/>
+    <rect x="40.5" y="41.5" width="4.5" height="8" fill="none" stroke="#a09880" stroke-width="0.4" rx="0.2"/>
+    <rect x="34.5" y="51" width="4.5" height="8" fill="none" stroke="#a09880" stroke-width="0.4" rx="0.2"/>
+    <rect x="40.5" y="51" width="4.5" height="8" fill="none" stroke="#a09880" stroke-width="0.4" rx="0.2"/>
+    <!-- Door handle -->
+    <circle cx="39.5" cy="57" r="0.7" fill="#888070"/>
+
+    <!-- ══ WINDOWS (white framed, right side) ══ -->
+    <!-- Window 1 -->
+    <rect x="75" y="40" width="18" height="22" fill="#c8d8e8" stroke="#c0b8a8" stroke-width="1.2"/>
+    <line x1="84" y1="40" x2="84" y2="62" stroke="white" stroke-width="1.2"/>
+    <line x1="75" y1="51" x2="93" y2="51" stroke="white" stroke-width="1.2"/>
+    <!-- Window 2 -->
+    <rect x="96" y="40" width="16" height="22" fill="#c8d8e8" stroke="#c0b8a8" stroke-width="1.2"/>
+    <line x1="104" y1="40" x2="104" y2="62" stroke="white" stroke-width="1.2"/>
+    <line x1="96" y1="51" x2="112" y2="51" stroke="white" stroke-width="1.2"/>
+
+    <!-- ══ BASE / PLINTH ══ -->
+    <rect x="5" y="68" width="110" height="4" fill="#888878" stroke="#707068" stroke-width="0.4"/>
+
+    <!-- PICNIC BENCH hint (left) -->
+    <rect x="8" y="58" width="18" height="2" fill="#a09070" opacity="0.7"/>
+    <rect x="9" y="55" width="16" height="1.5" fill="#b0a080" opacity="0.6"/>
+    <rect x="10" y="60" width="2" height="8" fill="#a09070" opacity="0.7"/>
+    <rect x="22" y="60" width="2" height="8" fill="#a09070" opacity="0.7"/>
+
+  </g>
+
+</svg>

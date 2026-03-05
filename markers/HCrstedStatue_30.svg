@@ -1,0 +1,288 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 100" width="56" height="100">
+  <defs>
+    <filter id="shadow" x="-30%" y="-10%" width="160%" height="130%">
+      <feDropShadow dx="0" dy="2.5" stdDeviation="2" flood-color="rgba(0,0,0,0.38)"/>
+    </filter>
+    <filter id="grit" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise"/>
+      <feBlend in="SourceGraphic" in2="grayNoise" mode="multiply" result="blended"/>
+      <feComposite in="blended" in2="SourceGraphic" operator="in"/>
+    </filter>
+
+    <!-- Dark oxidized bronze — aged, not shiny -->
+    <linearGradient id="gCoat" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#263d38"/>
+      <stop offset="28%"  stop-color="#4a6e66"/>
+      <stop offset="52%"  stop-color="#507068"/>
+      <stop offset="100%" stop-color="#1e3230"/>
+    </linearGradient>
+    <linearGradient id="gCoatFace" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#2e4a44"/>
+      <stop offset="45%"  stop-color="#5a8078"/>
+      <stop offset="100%" stop-color="#263c38"/>
+    </linearGradient>
+    <linearGradient id="gHead" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#2e4840"/>
+      <stop offset="40%"  stop-color="#5e8478"/>
+      <stop offset="100%" stop-color="#2a4038"/>
+    </linearGradient>
+    <linearGradient id="gPedestal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#6a6258"/>
+      <stop offset="38%"  stop-color="#b8b0a0"/>
+      <stop offset="70%"  stop-color="#a0988a"/>
+      <stop offset="100%" stop-color="#6a6258"/>
+    </linearGradient>
+    <linearGradient id="gBase" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#787068"/>
+      <stop offset="50%"  stop-color="#a8a098"/>
+      <stop offset="100%" stop-color="#787068"/>
+    </linearGradient>
+
+    <!-- Patina wash — greenish aged bronze deposit -->
+    <linearGradient id="gPatina" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%"   stop-color="#4a7a70" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#2a5048" stop-opacity="0.32"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ══════════════════════════════════════════════
+       PEDESTAL
+  ══════════════════════════════════════════════════ -->
+  <!-- Wide base slab -->
+  <rect x="5"  y="84" width="46" height="4.5" rx="0.4" fill="url(#gBase)" stroke="#585048" stroke-width="0.6"/>
+  <!-- Main pedestal block -->
+  <rect x="9" y="68" width="38" height="17" rx="0.6" fill="url(#gPedestal)" stroke="#686058" stroke-width="0.7"/>
+  <!-- Top cap moulding -->
+  <rect x="7"  y="65.5" width="42" height="3.5" rx="0.5" fill="#a89e90" stroke="#808070" stroke-width="0.6"/>
+  <!-- Subtle weathering crack lines on pedestal -->
+  <line x1="15" y1="70" x2="14" y2="82" stroke="#585048" stroke-width="0.25" opacity="0.4"/>
+  <line x1="38" y1="69" x2="40" y2="81" stroke="#585048" stroke-width="0.2" opacity="0.3"/>
+  <line x1="26" y1="70" x2="27" y2="78" stroke="#585048" stroke-width="0.18" opacity="0.25"/>
+
+  <!-- "HC ØRSTED" chiselled text — recessed look with offset shadow -->
+  <text x="28.5" y="77.8" text-anchor="middle"
+        font-family="'Georgia','Times New Roman',serif"
+        font-size="3.8" font-weight="bold" letter-spacing="0.6"
+        fill="#a8a090" opacity="0.5">HC ØRSTED</text>
+  <text x="28" y="77.5" text-anchor="middle"
+        font-family="'Georgia','Times New Roman',serif"
+        font-size="3.8" font-weight="bold" letter-spacing="0.6"
+        fill="#3a3428">HC ØRSTED</text>
+
+  <text x="28.3" y="81.8" text-anchor="middle"
+        font-family="'Georgia','Times New Roman',serif"
+        font-size="3" letter-spacing="0.4"
+        fill="#9a9282" opacity="0.5">1777 – 1851</text>
+  <text x="28" y="81.5" text-anchor="middle"
+        font-family="'Georgia','Times New Roman',serif"
+        font-size="3" letter-spacing="0.4"
+        fill="#4a4438">1777 – 1851</text>
+
+  <!-- Wreath emblem -->
+  <ellipse cx="28" cy="86.8" rx="5.2" ry="2.3" fill="none" stroke="#585048" stroke-width="0.8"/>
+  <ellipse cx="28" cy="86.8" rx="3.5" ry="1.4" fill="none" stroke="#585048" stroke-width="0.4" opacity="0.5"/>
+  <!-- Leaf marks on wreath -->
+  <g stroke="#585048" stroke-width="0.55" fill="none" opacity="0.85">
+    <path d="M23.2 85.8 Q22.5 86.8 23.2 87.8"/>
+    <path d="M24.2 85.2 Q23.3 86.8 24.2 88.4"/>
+    <path d="M25.4 84.8 Q24.8 86.8 25.4 88.8"/>
+    <path d="M32.8 85.8 Q33.5 86.8 32.8 87.8"/>
+    <path d="M31.8 85.2 Q32.7 86.8 31.8 88.4"/>
+    <path d="M30.6 84.8 Q31.2 86.8 30.6 88.8"/>
+  </g>
+  <!-- Centre knot of wreath -->
+  <ellipse cx="28" cy="86.8" rx="1" ry="0.7" fill="#585048" opacity="0.6"/>
+
+  <!-- ══════════════════════════════════════════════
+       FIGURE
+  ══════════════════════════════════════════════════ -->
+  <g filter="url(#shadow)">
+
+    <!-- SHOES — just two small tips poking out at the very bottom -->
+    <ellipse cx="22" cy="67.5" rx="3.5" ry="1.3" fill="#1a2820" stroke="#141e1c" stroke-width="0.4"/>
+    <ellipse cx="34" cy="67.5" rx="3.5" ry="1.3" fill="#1a2820" stroke="#141e1c" stroke-width="0.4"/>
+
+    <!-- COAT SKIRT — one solid shape covering everything, with shoe tips below -->
+    <path d="M14 43 Q12 55 12 65 L24 65 L24 67 L32 67 L32 65 L44 65 Q44 55 42 43 Z"
+          fill="url(#gCoat)" stroke="#141e1c" stroke-width="0.5"/>
+    <!-- Single centre fold line -->
+    <path d="M28 43 L28 65" stroke="#1a2e28" stroke-width="0.5" fill="none" opacity="0.4"/>
+
+    <!-- COAT BODY — broad, substantial torso -->
+    <path d="M13.5 23 Q12 30 12.5 38 Q13 42 15 43 L41 43 Q43 42 43.5 38 Q44 30 42.5 23 Z"
+          fill="url(#gCoat)" stroke="#141e1c" stroke-width="0.5"/>
+
+    <!-- Coat front centre line -->
+    <path d="M28 25 L28 43" stroke="#141e1c" stroke-width="0.55" fill="none"/>
+
+    <!-- Coat fold/drape lines — aged heavy wool texture -->
+    <path d="M16 26 Q15 32 15 40"   stroke="#1a2a26" stroke-width="0.5" fill="none" opacity="0.5"/>
+    <path d="M40 26 Q41 32 41 40"   stroke="#1a2a26" stroke-width="0.5" fill="none" opacity="0.5"/>
+    <path d="M19 27 Q18.5 34 18 41" stroke="#1a2a26" stroke-width="0.35" fill="none" opacity="0.35"/>
+    <path d="M37 27 Q37.5 34 38 41" stroke="#1a2a26" stroke-width="0.35" fill="none" opacity="0.35"/>
+
+    <!-- COAT LAPELS -->
+    <path d="M28 25.5 L21 29 L19.5 35.5 L23 34.5 L26 30 Z"
+          fill="url(#gCoatFace)" stroke="#141e1c" stroke-width="0.45"/>
+    <path d="M28 25.5 L35 29 L36.5 35.5 L33 34.5 L30 30 Z"
+          fill="url(#gCoatFace)" stroke="#141e1c" stroke-width="0.45"/>
+
+    <!-- WAISTCOAT -->
+    <path d="M23 34.5 L26 30 L28 31 L30 30 L33 34.5 L33 43 L23 43 Z"
+          fill="#507068" stroke="#1e3430" stroke-width="0.4"/>
+    <!-- Waistcoat buttons -->
+    <circle cx="28" cy="35.5" r="0.5" fill="#0e1e1a"/>
+    <circle cx="28" cy="37.8" r="0.5" fill="#0e1e1a"/>
+    <circle cx="28" cy="40.1" r="0.5" fill="#0e1e1a"/>
+    <circle cx="28" cy="42.3" r="0.5" fill="#0e1e1a"/>
+    <!-- Waistcoat pocket -->
+    <path d="M24 39 Q24.5 37.2 26.5 37.2 Q26.5 39.2 24 39 Z" fill="#3a5850" stroke="#1e3430" stroke-width="0.3"/>
+
+    <!-- SHIRT / CRAVAT stub -->
+    <rect x="26.5" y="27.5" width="3" height="3.5" rx="0.4" fill="#6a9890" stroke="#1e3430" stroke-width="0.3"/>
+
+    <!-- BOW TIE / cravat -->
+    <path d="M24 26.5 Q28 28.5 32 26.5 Q28 24 24 26.5 Z"
+          fill="#0e1e1a" stroke="#080e0c" stroke-width="0.4"/>
+    <ellipse cx="28" cy="26.8" rx="0.9" ry="0.8" fill="#1e3028"/>
+
+    <!-- COLLAR points -->
+    <path d="M25 27.5 L23.5 25 L27 26.5" fill="#6a9890" stroke="#1e3430" stroke-width="0.35"/>
+    <path d="M31 27.5 L32.5 25 L29 26.5" fill="#6a9890" stroke="#1e3430" stroke-width="0.35"/>
+
+    <!-- LEFT ARM -->
+    <path d="M13.5 24 Q10 29 9.5 36 Q9.5 41 12 43 Q14.5 44.5 16.5 43 Q18 41.5 17.5 37 Q17 31 15 26 Z"
+          fill="url(#gCoat)" stroke="#141e1c" stroke-width="0.45"/>
+    <!-- Left sleeve cuff -->
+    <path d="M12 42.5 Q12.5 45 16.5 43.5" stroke="#507068" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+    <!-- Sleeve fold lines -->
+    <path d="M11 30 Q10.5 35 11 40" stroke="#1a2a26" stroke-width="0.4" fill="none" opacity="0.4"/>
+
+    <!-- RIGHT ARM -->
+    <path d="M42.5 24 Q46 29 46.5 36 Q46.5 41 44 43 Q41.5 44.5 39.5 43 Q38 41.5 38.5 37 Q39 31 41 26 Z"
+          fill="url(#gCoat)" stroke="#141e1c" stroke-width="0.45"/>
+    <!-- Right sleeve cuff -->
+    <path d="M44 42.5 Q43.5 45 39.5 43.5" stroke="#507068" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+    <path d="M45 30 Q45.5 35 45 40" stroke="#1a2a26" stroke-width="0.4" fill="none" opacity="0.4"/>
+
+    <!-- ══════════════════════════════════════════════
+         CLASPED HANDS — fixed: properly emerging from coat front,
+         arms crossing in front of lower torso
+    ══════════════════════════════════════════════════ -->
+    <!-- Left forearm coming across from left -->
+    <path d="M17.5 43 Q20 44.5 24 45.5 Q26 45.8 28 45.8"
+          stroke="url(#gCoat)" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+    <path d="M17.5 43 Q20 44.5 24 45.5 Q26 45.8 28 45.8"
+          stroke="#1e3430" stroke-width="4.9" fill="none" stroke-linecap="round" opacity="0.3"/>
+    <!-- Right forearm coming across from right -->
+    <path d="M38.5 43 Q36 44.5 32 45.5 Q30 45.8 28 45.8"
+          stroke="url(#gCoat)" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+    <path d="M38.5 43 Q36 44.5 32 45.5 Q30 45.8 28 45.8"
+          stroke="#1e3430" stroke-width="4.9" fill="none" stroke-linecap="round" opacity="0.3"/>
+    <!-- The interlocked hands mass in centre -->
+    <path d="M20 44 Q24 47.5 28 48 Q32 47.5 36 44 Q33 42.2 28 41.8 Q23 42.2 20 44 Z"
+          fill="url(#gCoatFace)" stroke="#141e1c" stroke-width="0.5"/>
+    <!-- Knuckle lines -->
+    <path d="M21.5 44 Q28 46.8 34.5 44"  fill="none" stroke="#141e1c" stroke-width="0.5"/>
+    <path d="M22.5 45.2 Q28 47.5 33.5 45.2" fill="none" stroke="#141e1c" stroke-width="0.35" opacity="0.6"/>
+    <!-- Thumb of top hand -->
+    <path d="M33.5 43.5 Q36 42 35.5 44 Q34 45 32.5 44.5" fill="#3e6058" stroke="#141e1c" stroke-width="0.35"/>
+    <!-- Finger separation hints -->
+    <line x1="24" y1="43.5" x2="23.5" y2="47"  stroke="#141e1c" stroke-width="0.3" opacity="0.5"/>
+    <line x1="26" y1="43"   x2="25.5" y2="47.5" stroke="#141e1c" stroke-width="0.3" opacity="0.5"/>
+    <line x1="30" y1="43"   x2="30.5" y2="47.5" stroke="#141e1c" stroke-width="0.3" opacity="0.5"/>
+    <line x1="32" y1="43.5" x2="32.5" y2="47"   stroke="#141e1c" stroke-width="0.3" opacity="0.5"/>
+
+    <!-- NECK -->
+    <path d="M25.5 21.5 Q26 20 28 20 Q30 20 30.5 21.5 L30.8 25.5 L25.2 25.5 Z"
+          fill="url(#gHead)" stroke="#141e1c" stroke-width="0.4"/>
+
+    <!-- HEAD -->
+    <ellipse cx="28" cy="15" rx="6.8" ry="7.2" fill="url(#gHead)" stroke="#141e1c" stroke-width="0.55"/>
+
+    <!-- Heavy jowls -->
+    <ellipse cx="21.2" cy="19" rx="2.2" ry="2.8" fill="#4a6e64" opacity="0.55"/>
+    <ellipse cx="34.8" cy="19" rx="2.2" ry="2.8" fill="#4a6e64" opacity="0.55"/>
+
+    <!-- Forehead brow ridge -->
+    <path d="M22 11.5 Q28 10 34 11.5" fill="none" stroke="#141e1c" stroke-width="0.6" opacity="0.65"/>
+    <!-- Age lines on forehead -->
+    <path d="M24 11.8 Q28 11 32 11.8" fill="none" stroke="#141e1c" stroke-width="0.3" opacity="0.3"/>
+    <path d="M23.5 13 Q28 12.2 32.5 13" fill="none" stroke="#141e1c" stroke-width="0.25" opacity="0.25"/>
+
+    <!-- EYEBROWS — thick, heavy, furrowed -->
+    <path d="M23 14.2 Q24.5 13 26.5 14.2" fill="none" stroke="#0e1e1a" stroke-width="1.3" stroke-linecap="round"/>
+    <path d="M29.5 14.2 Q31.5 13 33 14.2" fill="none" stroke="#0e1e1a" stroke-width="1.3" stroke-linecap="round"/>
+
+    <!-- EYES — deep set -->
+    <ellipse cx="25" cy="16"  rx="1.8" ry="1.2" fill="#2a4038" opacity="0.45"/>
+    <ellipse cx="31" cy="16"  rx="1.8" ry="1.2" fill="#2a4038" opacity="0.45"/>
+    <ellipse cx="25" cy="16.1" rx="1.2" ry="1.0" fill="#0e1e18"/>
+    <ellipse cx="31" cy="16.1" rx="1.2" ry="1.0" fill="#0e1e18"/>
+    <!-- Aged eye highlight (muted, not shiny) -->
+    <circle cx="25.4" cy="15.7" r="0.3" fill="#5a8878" opacity="0.5"/>
+    <circle cx="31.4" cy="15.7" r="0.3" fill="#5a8878" opacity="0.5"/>
+    <!-- Under-eye shadow (age) -->
+    <path d="M23.5 17.2 Q25 17.8 26.5 17.2" fill="none" stroke="#0e1e18" stroke-width="0.4" opacity="0.4"/>
+    <path d="M29.5 17.2 Q31 17.8 32.5 17.2" fill="none" stroke="#0e1e18" stroke-width="0.4" opacity="0.4"/>
+
+    <!-- NOSE — large, prominent -->
+    <path d="M27.2 17 Q26.2 19.5 25.5 20.8 Q26.5 21.8 28 21.5 Q29.5 21.8 30.5 20.8 Q29.8 19.5 28.8 17 Z"
+          fill="#3e5e56" stroke="#141e1c" stroke-width="0.4"/>
+    <!-- Nostrils -->
+    <ellipse cx="26.2" cy="21" rx="0.75" ry="0.55" fill="#0e1e18" opacity="0.65"/>
+    <ellipse cx="29.8" cy="21" rx="0.75" ry="0.55" fill="#0e1e18" opacity="0.65"/>
+
+    <!-- MOUTH — stern, downturned slightly with age -->
+    <path d="M25.5 22.5 Q28 22.2 30.5 22.5" stroke="#0e1e18" stroke-width="0.75" stroke-linecap="round" fill="none"/>
+    <!-- Nasolabial folds (age lines) -->
+    <path d="M25.2 20.8 Q24.5 22 25.2 23.5" fill="none" stroke="#0e1e18" stroke-width="0.35" opacity="0.35"/>
+    <path d="M30.8 20.8 Q31.5 22 30.8 23.5" fill="none" stroke="#0e1e18" stroke-width="0.35" opacity="0.35"/>
+    <!-- Chin shadow -->
+    <path d="M26 23.5 Q28 24.5 30 23.5" fill="none" stroke="#0e1e18" stroke-width="0.4" opacity="0.45"/>
+
+    <!-- EARS -->
+    <path d="M21.4 14 Q19.2 15.2 18.8 18 Q19.2 20.8 21.4 22 Q22 20.3 21.7 18 Q22 15.8 21.4 14 Z"
+          fill="#4a6e62" stroke="#141e1c" stroke-width="0.45"/>
+    <path d="M20 16.2 Q19.7 18.5 20.2 20.5" fill="none" stroke="#0e1e18" stroke-width="0.45" opacity="0.5"/>
+    <path d="M34.6 14 Q36.8 15.2 37.2 18 Q36.8 20.8 34.6 22 Q34 20.3 34.3 18 Q34 15.8 34.6 14 Z"
+          fill="#4a6e62" stroke="#141e1c" stroke-width="0.45"/>
+    <path d="M36 16.2 Q36.3 18.5 35.8 20.5" fill="none" stroke="#0e1e18" stroke-width="0.45" opacity="0.5"/>
+
+    <!-- HAIR — balding, thin on top -->
+    <path d="M21.8 10 Q28 8 34.2 10 Q31.5 8.5 28 8.2 Q24.5 8.5 21.8 10 Z"
+          fill="#263830" stroke="#141e1c" stroke-width="0.3" opacity="0.85"/>
+    <!-- Side hair / temples -->
+    <path d="M22 9.8 Q20 11 19.5 13.5"
+          fill="none" stroke="#1e3028" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/>
+    <path d="M34 9.8 Q36 11 36.5 13.5"
+          fill="none" stroke="#1e3028" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/>
+
+    <!-- SIDEBURNS — long, thick, period accurate -->
+    <path d="M21.5 13.5 Q19.5 17 19.2 21.5 Q19.8 24 21.5 25.2"
+          fill="none" stroke="#1e3028" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M34.5 13.5 Q36.5 17 36.8 21.5 Q36.2 24 34.5 25.2"
+          fill="none" stroke="#1e3028" stroke-width="2.4" stroke-linecap="round"/>
+    <!-- Sideburn texture -->
+    <path d="M20.2 15 Q19.2 19.5 19.8 23.5"
+          fill="none" stroke="#0e1e18" stroke-width="0.55" stroke-linecap="round" opacity="0.45"/>
+    <path d="M35.8 15 Q36.8 19.5 36.2 23.5"
+          fill="none" stroke="#0e1e18" stroke-width="0.55" stroke-linecap="round" opacity="0.45"/>
+
+    <!-- Overall patina overlay on entire figure -->
+    <rect x="9" y="8" width="38" height="60" fill="url(#gPatina)" rx="2"/>
+
+  </g>
+
+  <!-- ══════════════════════════════════════════════
+       LABEL — white pill, same style
+  ══════════════════════════════════════════════════ -->
+  <rect x="2" y="1" width="52" height="10" rx="5"
+        fill="white" stroke="#cccccc" stroke-width="0.9"/>
+  <text x="28" y="8.5" text-anchor="middle"
+        font-family="'Nunito','Arial',sans-serif"
+        font-size="5.2" font-weight="800" letter-spacing="0.05"
+        fill="#000000">H.C. Ørsted</text>
+
+</svg>
