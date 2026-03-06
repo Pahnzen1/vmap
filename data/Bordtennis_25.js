@@ -1,0 +1,1 @@
+var json_Bordtennis_25 = {"type":"FeatureCollection","name":"Bordtennis_25","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"Bordtennis ved Skudehavnen":"Bordtennis","lon":10.71386,"lat":54.94057},"geometry":{"type":"Point","coordinates":[10.71386,54.94057]}}]}

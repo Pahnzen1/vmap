@@ -1,0 +1,1 @@
+var json_Petanque_24 = {"type":"FeatureCollection","name":"Petanque_24","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"Petanquebane ved Skudehavnen":"Petanque","lon":10.71353,"lat":54.94066},"geometry":{"type":"Point","coordinates":[10.71353,54.94066]}}]}
