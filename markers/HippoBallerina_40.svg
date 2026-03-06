@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150" width="100" height="150">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#00000055"/>
+    </filter>
+  </defs>
+
+  <!-- PILL LABEL -->
+  <rect x="2" y="1" width="96" height="15" rx="7.5" fill="white" stroke="#cccccc" stroke-width="0.8" filter="url(#shadow)"/>
+  <text x="50" y="11.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="bold" fill="#1a1a1a" letter-spacing="0.1">Hippo Ballerina</text>
+
+  <!-- Ground shadow -->
+  <ellipse cx="50" cy="146" rx="32" ry="4" fill="#555" opacity="0.15"/>
+
+  <!-- === DARK BASE PLATE === -->
+  <rect x="22" y="136" width="56" height="8" rx="1" fill="#333" stroke="#444" stroke-width="0.5" filter="url(#shadow)"/>
+  <!-- Small plaque on base -->
+  <rect x="40" y="139" width="20" height="3" rx="0.5" fill="#555" opacity="0.5"/>
+
+  <!-- === HIPPO BODY === -->
+  <g filter="url(#shadow)">
+
+    <!-- Legs - short, sturdy, standing -->
+    <!-- Left leg -->
+    <path d="M36,125 L35,136" stroke="#4a3828" stroke-width="7" stroke-linecap="round"/>
+    <!-- Right leg -->
+    <path d="M64,125 L65,136" stroke="#4a3828" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- Ballet shoes - golden -->
+    <ellipse cx="34" cy="137" rx="6" ry="2.5" fill="#c8a432" stroke="#a08228" stroke-width="0.5"/>
+    <ellipse cx="66" cy="137" rx="6" ry="2.5" fill="#c8a432" stroke="#a08228" stroke-width="0.5"/>
+    <!-- Shoe straps -->
+    <path d="M30,135 Q34,133 38,135" stroke="#a08228" stroke-width="0.5" fill="none"/>
+    <path d="M62,135 Q66,133 70,135" stroke="#a08228" stroke-width="0.5" fill="none"/>
+
+    <!-- Big round belly/body -->
+    <ellipse cx="50" cy="112" rx="24" ry="22" fill="#4a3828"/>
+    <!-- Belly highlight -->
+    <ellipse cx="47" cy="115" rx="10" ry="12" fill="#554838" opacity="0.4"/>
+
+    <!-- === TUTU / PLEATED SKIRT - white === -->
+    <path d="M26,96 Q30,104 50,106 Q70,104 74,96" fill="none" stroke="#e8e4dc" stroke-width="0.5"/>
+    <!-- Pleated tutu shape -->
+    <path d="M26,95 L28,103 L31,102 L33,104 L36,102 L38,104 L41,102 L43,104 L46,102 L48,104 L50,102 L52,104 L54,102 L56,104 L58,102 L60,104 L62,102 L64,104 L67,102 L69,104 L72,102 L74,95" fill="#e8e4dc" stroke="#ccc8c0" stroke-width="0.4"/>
+    <!-- Tutu pleat vertical lines -->
+    <g stroke="#d0ccc4" stroke-width="0.3">
+      <line x1="29" y1="95" x2="29.5" y2="103"/>
+      <line x1="32" y1="95" x2="32" y2="103"/>
+      <line x1="35" y1="95" x2="35" y2="103"/>
+      <line x1="38" y1="95" x2="38" y2="103"/>
+      <line x1="41" y1="95" x2="41" y2="103"/>
+      <line x1="44" y1="95" x2="44" y2="103"/>
+      <line x1="47" y1="95" x2="47" y2="103"/>
+      <line x1="50" y1="95" x2="50" y2="103"/>
+      <line x1="53" y1="95" x2="53" y2="103"/>
+      <line x1="56" y1="95" x2="56" y2="103"/>
+      <line x1="59" y1="95" x2="59" y2="103"/>
+      <line x1="62" y1="95" x2="62" y2="103"/>
+      <line x1="65" y1="95" x2="65" y2="103"/>
+      <line x1="68" y1="95" x2="68" y2="103"/>
+      <line x1="71" y1="95" x2="71.5" y2="103"/>
+    </g>
+    <!-- Tutu bottom edge highlight -->
+    <path d="M27,103 Q50,108 73,103" stroke="#fff" stroke-width="0.4" fill="none" opacity="0.3"/>
+
+    <!-- === CORSET/BODICE - golden plaid === -->
+    <path d="M34,78 Q36,72 50,70 Q64,72 66,78 L74,95 L26,95 Z" fill="#8a7a28"/>
+    <!-- Gold trim at top edge -->
+    <path d="M34,78 Q36,72 50,70 Q64,72 66,78" stroke="#c8a432" stroke-width="1.5" fill="none"/>
+    <!-- Gold trim scallop detail -->
+    <path d="M35,77 Q37,74 39,77 Q41,74 43,77 Q45,74 47,77 Q49,74 51,77 Q53,74 55,77 Q57,74 59,77 Q61,74 63,77 Q65,74 66,77" stroke="#c8a432" stroke-width="0.6" fill="none"/>
+    <!-- Gold trim at bottom edge -->
+    <path d="M26,95 L74,95" stroke="#c8a432" stroke-width="1.5"/>
+    <!-- Plaid pattern - horizontal -->
+    <g stroke="#a09030" stroke-width="0.4" opacity="0.5">
+      <line x1="28" y1="82" x2="72" y2="82"/>
+      <line x1="27" y1="86" x2="73" y2="86"/>
+      <line x1="26" y1="90" x2="74" y2="90"/>
+    </g>
+    <!-- Plaid pattern - vertical -->
+    <g stroke="#a09030" stroke-width="0.4" opacity="0.5">
+      <line x1="38" y1="75" x2="32" y2="95"/>
+      <line x1="44" y1="72" x2="40" y2="95"/>
+      <line x1="50" y1="71" x2="50" y2="95"/>
+      <line x1="56" y1="72" x2="60" y2="95"/>
+      <line x1="62" y1="75" x2="68" y2="95"/>
+    </g>
+    <!-- Center front buttons/lacing -->
+    <line x1="50" y1="72" x2="50" y2="95" stroke="#6a5a18" stroke-width="0.6"/>
+    <circle cx="50" cy="78" r="0.8" fill="#c8a432"/>
+    <circle cx="50" cy="83" r="0.8" fill="#c8a432"/>
+    <circle cx="50" cy="88" r="0.8" fill="#c8a432"/>
+    <circle cx="50" cy="93" r="0.8" fill="#c8a432"/>
+
+    <!-- === UPPER BODY / CHEST above corset === -->
+    <path d="M34,78 Q35,66 50,62 Q65,66 66,78" fill="#4a3828"/>
+
+    <!-- === NECK - wide, connecting head to body === -->
+    <path d="M38,66 Q38,58 42,52 L58,52 Q62,58 62,66" fill="#4a3828"/>
+
+    <!-- === HEAD === -->
+    <!-- Main head shape - wide hippo head -->
+    <ellipse cx="50" cy="42" rx="14" ry="13" fill="#4a3828"/>
+
+    <!-- Snout - big, round, protruding -->
+    <ellipse cx="50" cy="50" rx="10" ry="6.5" fill="#503e2e"/>
+    <!-- Snout highlight -->
+    <ellipse cx="48" cy="49" rx="5" ry="3.5" fill="#5a4838" opacity="0.4"/>
+    <!-- Nostrils -->
+    <ellipse cx="45" cy="50" rx="2.2" ry="1.5" fill="#3a2a1a" transform="rotate(-10,45,50)"/>
+    <ellipse cx="55" cy="50" rx="2.2" ry="1.5" fill="#3a2a1a" transform="rotate(10,55,50)"/>
+    <!-- Mouth line -->
+    <path d="M42,53 Q50,56 58,53" stroke="#3a2a1a" stroke-width="0.6" fill="none"/>
+    <!-- Slight smile -->
+    <path d="M44,54 Q50,57 56,54" stroke="#3a2a1a" stroke-width="0.4" fill="none"/>
+
+    <!-- Eyes - round, expressive, slightly looking up -->
+    <circle cx="43" cy="40" r="3.2" fill="#3a2a1a"/>
+    <circle cx="57" cy="40" r="3.2" fill="#3a2a1a"/>
+    <!-- Eye highlight/shine -->
+    <circle cx="44" cy="39" r="1" fill="#6a5a4a"/>
+    <circle cx="58" cy="39" r="1" fill="#6a5a4a"/>
+    <!-- Eyelids -->
+    <path d="M40,38 Q43,36 46,38" stroke="#4a3828" stroke-width="0.8" fill="none"/>
+    <path d="M54,38 Q57,36 60,38" stroke="#4a3828" stroke-width="0.8" fill="none"/>
+
+    <!-- Small ears on top -->
+    <ellipse cx="40" cy="30" rx="3" ry="4" fill="#4a3828" transform="rotate(-15,40,30)"/>
+    <ellipse cx="60" cy="30" rx="3" ry="4" fill="#4a3828" transform="rotate(15,60,30)"/>
+    <!-- Inner ear -->
+    <ellipse cx="40" cy="30" rx="1.5" ry="2.5" fill="#3a2a1a" transform="rotate(-15,40,30)"/>
+    <ellipse cx="60" cy="30" rx="1.5" ry="2.5" fill="#3a2a1a" transform="rotate(15,60,30)"/>
+
+    <!-- Bronze patina/highlight hints -->
+    <ellipse cx="45" cy="110" rx="6" ry="8" fill="#5a4838" opacity="0.12"/>
+    <ellipse cx="50" cy="45" rx="4" ry="5" fill="#5a4838" opacity="0.08"/>
+
+  </g>
+
+</svg>

@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 110" width="140" height="110">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#00000055"/>
+    </filter>
+  </defs>
+
+  <!-- PILL LABEL -->
+  <rect x="14" y="1" width="112" height="15" rx="7.5" fill="white" stroke="#cccccc" stroke-width="0.8" filter="url(#shadow)"/>
+  <text x="70" y="11.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="7.5" font-weight="bold" fill="#1a1a1a" letter-spacing="0.1">Bio Langeland</text>
+
+  <!-- Ground shadow -->
+  <ellipse cx="70" cy="105" rx="55" ry="4" fill="#555" opacity="0.15"/>
+
+  <!-- === BUILDING === -->
+
+  <!-- Main building body - wide dark rectangle -->
+  <rect x="8" y="30" width="124" height="62" rx="1" fill="#1e1e1e" filter="url(#shadow)"/>
+
+  <!-- Vertical wood plank lines (vertical cladding) -->
+  <g stroke="#151515" stroke-width="0.4" opacity="0.6">
+    <line x1="14" y1="30" x2="14" y2="92"/>
+    <line x1="20" y1="30" x2="20" y2="92"/>
+    <line x1="26" y1="30" x2="26" y2="92"/>
+    <line x1="32" y1="30" x2="32" y2="92"/>
+    <line x1="38" y1="30" x2="38" y2="92"/>
+    <line x1="44" y1="30" x2="44" y2="92"/>
+    <line x1="50" y1="30" x2="50" y2="92"/>
+    <line x1="56" y1="30" x2="56" y2="92"/>
+    <line x1="62" y1="30" x2="62" y2="92"/>
+    <line x1="68" y1="30" x2="68" y2="92"/>
+    <line x1="74" y1="30" x2="74" y2="92"/>
+    <line x1="80" y1="30" x2="80" y2="92"/>
+    <line x1="86" y1="30" x2="86" y2="92"/>
+    <line x1="92" y1="30" x2="92" y2="92"/>
+    <line x1="98" y1="30" x2="98" y2="92"/>
+    <line x1="104" y1="30" x2="104" y2="92"/>
+    <line x1="110" y1="30" x2="110" y2="92"/>
+    <line x1="116" y1="30" x2="116" y2="92"/>
+    <line x1="122" y1="30" x2="122" y2="92"/>
+    <line x1="128" y1="30" x2="128" y2="92"/>
+  </g>
+
+  <!-- Flat/slightly sloped dark roof -->
+  <polygon points="5,30 70,22 135,30" fill="#2d2d2d" stroke="#333" stroke-width="0.5"/>
+  <!-- Roof edge -->
+  <line x1="5" y1="30" x2="135" y2="30" stroke="#444" stroke-width="0.8"/>
+
+  <!-- "BIO LANGELAND" text on facade - centered upper area -->
+  <text x="52" y="52" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="6" font-weight="bold" fill="#d8d8d8" letter-spacing="2">BIO LANGELAND</text>
+
+  <!-- Three-ellipse logo - to the right of text -->
+  <g transform="translate(88, 48) scale(0.26)">
+    <!-- Blue ellipse (back, tilted left) -->
+    <ellipse cx="28" cy="48" rx="34" ry="22" fill="none" stroke="#5566cc" stroke-width="7" transform="rotate(-30, 28, 48)"/>
+    <!-- Orange/red ellipse (small, overlapping) -->
+    <ellipse cx="40" cy="28" rx="14" ry="10" fill="none" stroke="#dd5533" stroke-width="6" transform="rotate(-10, 40, 28)"/>
+    <!-- Green ellipse (tall, front) -->
+    <ellipse cx="52" cy="40" rx="16" ry="36" fill="none" stroke="#00aa66" stroke-width="7" transform="rotate(12, 52, 40)"/>
+  </g>
+
+  <!-- Stone/rock base along the bottom of building -->
+  <g fill="#8a7e70" opacity="0.55">
+    <ellipse cx="12" cy="92" rx="3.5" ry="2"/>
+    <ellipse cx="18" cy="93" rx="2.8" ry="1.6"/>
+    <ellipse cx="24" cy="92" rx="3.2" ry="2.1"/>
+    <ellipse cx="31" cy="93" rx="3" ry="1.7"/>
+    <ellipse cx="38" cy="92" rx="2.5" ry="1.8"/>
+    <ellipse cx="44" cy="93" rx="3.5" ry="2"/>
+    <ellipse cx="51" cy="92" rx="2.8" ry="1.6"/>
+    <ellipse cx="57" cy="93" rx="3" ry="2"/>
+    <ellipse cx="64" cy="92" rx="3.2" ry="1.8"/>
+    <ellipse cx="71" cy="93" rx="2.5" ry="1.7"/>
+    <ellipse cx="77" cy="92" rx="3" ry="2"/>
+    <ellipse cx="84" cy="93" rx="3.5" ry="1.6"/>
+    <ellipse cx="90" cy="92" rx="2.8" ry="2"/>
+    <ellipse cx="97" cy="93" rx="3" ry="1.8"/>
+    <ellipse cx="103" cy="92" rx="3.2" ry="1.6"/>
+    <ellipse cx="110" cy="93" rx="2.5" ry="2"/>
+    <ellipse cx="116" cy="92" rx="3" ry="1.7"/>
+    <ellipse cx="123" cy="93" rx="3.5" ry="2"/>
+    <ellipse cx="129" cy="92" rx="2.8" ry="1.8"/>
+  </g>
+
+  <!-- Metal railing in front -->
+  <g stroke="#888" stroke-width="0.5" fill="none">
+    <line x1="6" y1="97" x2="134" y2="97"/>
+    <line x1="6" y1="100" x2="134" y2="100"/>
+    <line x1="10" y1="95" x2="10" y2="102"/>
+    <line x1="22" y1="95" x2="22" y2="102"/>
+    <line x1="34" y1="95" x2="34" y2="102"/>
+    <line x1="46" y1="95" x2="46" y2="102"/>
+    <line x1="58" y1="95" x2="58" y2="102"/>
+    <line x1="70" y1="95" x2="70" y2="102"/>
+    <line x1="82" y1="95" x2="82" y2="102"/>
+    <line x1="94" y1="95" x2="94" y2="102"/>
+    <line x1="106" y1="95" x2="106" y2="102"/>
+    <line x1="118" y1="95" x2="118" y2="102"/>
+    <line x1="130" y1="95" x2="130" y2="102"/>
+  </g>
+
+  <!-- Street lamp on left -->
+  <line x1="12" y1="75" x2="12" y2="95" stroke="#777" stroke-width="0.8"/>
+  <circle cx="12" cy="74" r="1.8" fill="#f5e6a0" opacity="0.7"/>
+  <circle cx="12" cy="74" r="3" fill="#f5e6a0" opacity="0.15"/>
+
+</svg>

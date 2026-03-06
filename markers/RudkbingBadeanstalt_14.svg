@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -22 130 100" width="130" height="100">
+  <defs>
+    <linearGradient id="wall" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8a2418"/>
+      <stop offset="50%" stop-color="#a42e20"/>
+      <stop offset="100%" stop-color="#7e2016"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3a4840"/>
+      <stop offset="100%" stop-color="#2a3830"/>
+    </linearGradient>
+    <linearGradient id="deck" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c8b890"/>
+      <stop offset="100%" stop-color="#a89870"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5888a8"/>
+      <stop offset="100%" stop-color="#3a6888"/>
+    </linearGradient>
+    <filter id="sh">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="rgba(0,0,0,0.28)"/>
+    </filter>
+  </defs>
+
+  <!-- ══ FLOATING LABEL ══ -->
+  <rect x="5" y="-20" width="120" height="14" rx="7"
+        fill="white" stroke="#cccccc" stroke-width="0.9"/>
+  <text x="65" y="-10" text-anchor="middle"
+        font-family="'Nunito','Arial',sans-serif"
+        font-size="5.8" font-weight="800" letter-spacing="0.05"
+        fill="#000000">Rudkøbing Søbadeanstalt</text>
+
+  <g filter="url(#sh)">
+
+    <!-- ══ WATER ══ -->
+    <rect x="0" y="78" width="130" height="22" fill="url(#water)" opacity="0.7"/>
+    <!-- Water ripples -->
+    <g stroke="#6898b8" stroke-width="0.4" opacity="0.5" fill="none">
+      <path d="M10 82 Q25 80 40 82"/>
+      <path d="M50 84 Q65 82 80 84"/>
+      <path d="M85 81 Q100 79 115 81"/>
+      <path d="M5 87 Q20 85 35 87"/>
+      <path d="M60 88 Q75 86 90 88"/>
+    </g>
+
+    <!-- ══ WOODEN DECK / PIER ══ -->
+    <rect x="0" y="68" width="130" height="12" fill="url(#deck)"/>
+    <!-- Deck planks -->
+    <g stroke="#a89060" stroke-width="0.35" opacity="0.6">
+      <line x1="0" y1="69.5" x2="130" y2="69.5"/>
+      <line x1="0" y1="71" x2="130" y2="71"/>
+      <line x1="0" y1="72.5" x2="130" y2="72.5"/>
+      <line x1="0" y1="74" x2="130" y2="74"/>
+      <line x1="0" y1="75.5" x2="130" y2="75.5"/>
+      <line x1="0" y1="77" x2="130" y2="77"/>
+    </g>
+    <!-- Deck edge -->
+    <rect x="0" y="78" width="130" height="2" fill="#888060" opacity="0.8"/>
+
+    <!-- ══ LONG RED FENCE / OUTER WALL ══ -->
+    <!-- Main horizontal plank wall (the long red fence seen from outside) -->
+    <rect x="0" y="42" width="130" height="28" fill="url(#wall)" stroke="#601808" stroke-width="0.4"/>
+    <!-- Horizontal plank lines -->
+    <g stroke="#701a0a" stroke-width="0.5" opacity="0.5">
+      <line x1="0" y1="45" x2="130" y2="45"/>
+      <line x1="0" y1="48.5" x2="130" y2="48.5"/>
+      <line x1="0" y1="52" x2="130" y2="52"/>
+      <line x1="0" y1="55.5" x2="130" y2="55.5"/>
+      <line x1="0" y1="59" x2="130" y2="59"/>
+      <line x1="0" y1="62.5" x2="130" y2="62.5"/>
+      <line x1="0" y1="66" x2="130" y2="66"/>
+    </g>
+
+    <!-- Sign on fence wall -->
+    <rect x="76" y="47" width="40" height="14" rx="1" fill="white" stroke="#c0c0c0" stroke-width="0.6"/>
+    <text x="96" y="52.5" text-anchor="middle"
+          font-family="Arial,sans-serif" font-size="4" font-weight="bold" fill="#1a3a80">Rudkøbing</text>
+    <text x="96" y="58.5" text-anchor="middle"
+          font-family="Arial,sans-serif" font-size="4" font-weight="bold" fill="#1a3a80">Søbadeanstalt</text>
+
+    <!-- ══ CENTRAL TOWER BUILDING ══ -->
+    <!-- Tower body -->
+    <rect x="18" y="14" width="34" height="55" fill="url(#wall)" stroke="#601808" stroke-width="0.5"/>
+    <!-- Vertical cladding lines on tower -->
+    <g stroke="#701a0a" stroke-width="0.4" opacity="0.55">
+      <line x1="22" y1="14" x2="22" y2="69"/>
+      <line x1="26" y1="14" x2="26" y2="69"/>
+      <line x1="30" y1="14" x2="30" y2="69"/>
+      <line x1="34" y1="14" x2="34" y2="69"/>
+      <line x1="38" y1="14" x2="38" y2="69"/>
+      <line x1="42" y1="14" x2="42" y2="69"/>
+      <line x1="46" y1="14" x2="46" y2="69"/>
+    </g>
+
+    <!-- Tower roof (flat with dark cap) -->
+    <rect x="15" y="10" width="40" height="6" fill="url(#roof)" stroke="#1e2e28" stroke-width="0.5"/>
+    <!-- Roof cap overhang -->
+    <rect x="14" y="8" width="42" height="4" fill="#2a3830" stroke="#1a2820" stroke-width="0.4"/>
+
+    <!-- Arched double door on tower (cream arch surround) -->
+    <!-- Arch surround -->
+    <path d="M28 69 L28 42 Q28 32 35 32 Q42 32 42 42 L42 69 Z"
+          fill="#e8d890" stroke="#c8b850" stroke-width="1.2"/>
+    <!-- Door inner (red) -->
+    <path d="M29.5 69 L29.5 43 Q29.5 34.5 35 34.5 Q40.5 34.5 40.5 43 L40.5 69 Z"
+          fill="#8a2418"/>
+    <!-- Door centre split -->
+    <line x1="35" y1="34.5" x2="35" y2="69" stroke="#601808" stroke-width="0.8"/>
+    <!-- Door diagonal planks -->
+    <g stroke="#701a0a" stroke-width="0.5" opacity="0.6">
+      <line x1="29.5" y1="50" x2="35" y2="44"/>
+      <line x1="29.5" y1="58" x2="35" y2="52"/>
+      <line x1="29.5" y1="66" x2="35" y2="60"/>
+      <line x1="35" y1="44" x2="40.5" y2="50"/>
+      <line x1="35" y1="52" x2="40.5" y2="58"/>
+      <line x1="35" y1="60" x2="40.5" y2="66"/>
+    </g>
+    <!-- Door handle bar -->
+    <line x1="33" y1="54" x2="33" y2="58" stroke="#c8a030" stroke-width="1" stroke-linecap="round"/>
+    <line x1="37" y1="54" x2="37" y2="58" stroke="#c8a030" stroke-width="1" stroke-linecap="round"/>
+
+    <!-- Yellow accent band below roofline on tower -->
+    <rect x="18" y="18" width="34" height="4" fill="#e8c840" opacity="0.85"/>
+
+    <!-- ══ SMALL SIDE KIOSKS / CABINS ══ -->
+    <!-- Left cabin -->
+    <rect x="2" y="34" width="16" height="35" fill="url(#wall)" stroke="#601808" stroke-width="0.4"/>
+    <rect x="1" y="30" width="18" height="6" fill="url(#roof)" stroke="#1e2e28" stroke-width="0.4"/>
+    <rect x="0" y="28" width="20" height="4" fill="#2a3830" stroke="#1a2820" stroke-width="0.3"/>
+    <!-- Yellow band left cabin -->
+    <rect x="2" y="34" width="16" height="3.5" fill="#e8c840" opacity="0.85"/>
+    <!-- Left cabin window -->
+    <rect x="5" y="42" width="10" height="12" fill="#d8c890" stroke="#c8a840" stroke-width="0.8"/>
+    <line x1="10" y1="42" x2="10" y2="54" stroke="#c8a840" stroke-width="0.5"/>
+    <line x1="5" y1="48" x2="15" y2="48" stroke="#c8a840" stroke-width="0.5"/>
+
+    <!-- Right cabin -->
+    <rect x="112" y="34" width="16" height="35" fill="url(#wall)" stroke="#601808" stroke-width="0.4"/>
+    <rect x="111" y="30" width="18" height="6" fill="url(#roof)" stroke="#1e2e28" stroke-width="0.4"/>
+    <rect x="110" y="28" width="20" height="4" fill="#2a3830" stroke="#1a2820" stroke-width="0.3"/>
+    <!-- Yellow band right cabin -->
+    <rect x="112" y="34" width="16" height="3.5" fill="#e8c840" opacity="0.85"/>
+
+    <!-- ══ RED RAILING / FENCE on deck ══ -->
+    <!-- Left railing section -->
+    <g stroke="#8a2418" stroke-width="1.5" stroke-linecap="round">
+      <!-- Posts -->
+      <line x1="2" y1="68" x2="2" y2="58"/>
+      <line x1="10" y1="68" x2="10" y2="58"/>
+      <line x1="18" y1="68" x2="18" y2="58"/>
+      <!-- Rails -->
+      <line x1="2" y1="61" x2="18" y2="61"/>
+      <line x1="2" y1="64" x2="18" y2="64"/>
+    </g>
+    <!-- Right railing section -->
+    <g stroke="#8a2418" stroke-width="1.5" stroke-linecap="round">
+      <line x1="52" y1="68" x2="52" y2="58"/>
+      <line x1="65" y1="68" x2="65" y2="58"/>
+      <line x1="78" y1="68" x2="78" y2="58"/>
+      <line x1="90" y1="68" x2="90" y2="58"/>
+      <line x1="112" y1="68" x2="112" y2="58"/>
+      <line x1="128" y1="68" x2="128" y2="58"/>
+      <!-- Rails -->
+      <line x1="52" y1="61" x2="112" y2="61"/>
+      <line x1="52" y1="64" x2="112" y2="64"/>
+      <line x1="112" y1="61" x2="128" y2="61"/>
+      <line x1="112" y1="64" x2="128" y2="64"/>
+    </g>
+
+    <!-- ══ FLAG on tower ══ -->
+    <line x1="35" y1="2" x2="35" y2="10" stroke="#888880" stroke-width="0.6"/>
+    <polygon points="35,2 42,4.5 35,7" fill="#4a8840" opacity="0.85"/>
+
+    <!-- Swimming ladder hints -->
+    <g stroke="#909090" stroke-width="0.8" stroke-linecap="round">
+      <line x1="108" y1="78" x2="108" y2="92"/>
+      <line x1="112" y1="78" x2="112" y2="92"/>
+      <line x1="108" y1="82" x2="112" y2="82"/>
+      <line x1="108" y1="86" x2="112" y2="86"/>
+      <line x1="108" y1="90" x2="112" y2="90"/>
+    </g>
+
+  </g>
+
+</svg>
