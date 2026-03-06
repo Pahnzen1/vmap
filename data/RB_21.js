@@ -1,1 +1,0 @@
-var json_RB_21 = {"type":"FeatureCollection","name":"RB_21","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"Rudkøbing Boldklub":"Rudkøbing Boldklub","lon":10.704,"lat":54.93219,"Hjemmeside":"https://www.r-b.dk/"},"geometry":{"type":"Point","coordinates":[10.704,54.93219]}}]}

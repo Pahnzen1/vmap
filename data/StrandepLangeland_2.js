@@ -1,1 +1,0 @@
-var json_StrandepLangeland_2 = {"type":"FeatureCollection","name":"StrandepLangeland_2","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"Strand":"Bellevue Strand","lon":10.70123,"lat":54.93442},"geometry":{"type":"Point","coordinates":[10.70123,54.93442]}}]}
